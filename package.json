@@ -13,13 +13,18 @@
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.23.7",
-        "eslint": "^8.52.0",
+        "eslint": "^8.54.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-import": "^2.29.0",
+<<<<<<< HEAD
+        "prettier": "^3.0.3",
+        "stylelint": "^15.11.0",
+=======
         "prettier": "^3.0.3"
     },
     "dependencies": {
+>>>>>>> 1477e48456177ee8246b716f7b2424c4aecc8a9f
         "stylelint-config-sass-guidelines": "^10.0.0",
         "stylelint-config-standard": "^34.0.0"
     }
