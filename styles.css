@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--font-family-heading);
+}
+
+:root {
+/* Litir */
+--color-grey: rgb(54, 46, 37);
+--color-font-grey: #2e2e2e;
+--color-font-white: #ffffff;
+
+/* font */
+--font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+--font-family-heading: 'Lora', Georgia, serif;
+}
+
+.header {
+    padding: 2%;
+    background-color: var(--color-grey);
+    color: var(--color-font-white);
+}
+.header header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--color-font-white);
+    font-family: var(--font-family-base);
+}
+
+.wrapper {
+    padding: 2%;
+}
