@@ -46,17 +46,27 @@ h1 {
     padding: 2%;
 }
 
-
-
 .container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
     align-items: center;
     border:2px solid red;
   }
   .box {
     border:2px solid green;
+    display: flex;
+    flex-direction: column;
+   
   }
-  
+
+  .box1 {
+    border:2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+
 
 
