@@ -22,7 +22,6 @@ function displayProducts(products) {
         const productDiv = document.createElement('div');
         productDiv.classList.add('box');
         productDiv.innerHTML = `
-
             <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
             <h3>${product.title}</h3>
             <p>${product.category_title}</p>
