@@ -44,4 +44,54 @@ function displayCategories(categories) {
     })
 }
 
+function displayCategoryProducts(headingText, category, limit, from) {
+    fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?offset=${from}&category=${category}&limit=99`)
+    .then(response => response.json())
+    .then(data => {
+        const products = data.items;
+        const content = document.getElementById('content');
+        const container = document.getElementById('product-container');
+        let counter = 0;
+        products.forEach(product => { if (counter < limit) {
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('box');
+            productDiv.innerHTML = `
+                
+                <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
+                <h3>${product.title}</h3>
+                <p>${product.category_title}</p>
+                <p>${product.price} kr.-</p>
+                <a href="/?product=${product.id}">View Product</a>
+            `;
+            container.append(productDiv);
+            counter++;
+        }});
+        if (headingText) {
+            const heading = document.createElement('h2');
+            heading.innerText = headingText;
+            content.insertBefore(heading, container);
+        }
+    })
+}
+
+function displayProduct(ProductInfo) {
+    const content = document.getElementById('content');
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('productBlock');
+    productDiv.innerHTML = `
+        <img src="${ProductInfo.image}"></img>
+        <div class="productDesc">
+            <h3>${productInfo.image}"></h3>
+            <div class="productTags">
+                <p>Flokkur: ${productInfo.category_title}</p>
+                <p>Verð: ${productInfo.price} kr.-</p>
+            </div>
+            <p>
+                ${productInfo.descripction}
+            </p>
+        </div>
+    `
+    content.insertBefore(productDiv, document.getElementById('product-container'));
+}
+
 renderFrontPage()
