@@ -12,14 +12,13 @@ function displayProducts(products) {
     products.forEach(product => {
         const productDiv = document.createElement('div');
         productDiv.classList.add('box');
-        productDiv.innerHTML = 
-            
+        productDiv.innerHTML = `
             <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
             <h3>${product.title}</h3>
             <p>${product.category_title}</p>
             <p>${product.price} kr.-</p>
             <a href="/product/${product.id}">View Product</a>
-        ;
+        `;
         container.appendChild(productDiv);
     });
 }
