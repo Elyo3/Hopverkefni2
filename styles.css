@@ -10,7 +10,7 @@ h1 {
 
 :root {
 /* Litir */
---color-grey: rgb(54, 46, 37);
+--color-pink: pink;
 --color-font-grey: #2e2e2e;
 --color-font-white: #ffffff;
 
@@ -21,7 +21,7 @@ h1 {
 
 .header {
     padding: 2%;
-    background-color: var(--color-grey);
+    background-color: var(--color-pink);
     color: var(--color-font-white);
 }
 .header header{
@@ -45,15 +45,18 @@ h1 {
 .wrapper {
     padding: 2%;
 }
-.boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-}
 
-.box {
-    flex: 0 0 30%; 
-    margin: 10px;
-    text-align: left; 
-}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid red;
+  }
+  .box {
+    border:2px solid green;
+  }
+  
+
 
