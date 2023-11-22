@@ -45,4 +45,15 @@ h1 {
 .wrapper {
     padding: 2%;
 }
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.box {
+    flex: 0 0 30%; 
+    margin: 10px;
+    text-align: left; 
+}
 
