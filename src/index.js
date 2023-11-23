@@ -30,7 +30,7 @@ function displayProducts(products, headingText, buttonBool) {
     button.onClick = "location.href='/?categories'";
     products.forEach(product => {
         const productDiv = document.createElement('div');
-        productDiv.classList.add('box');
+        productDiv.classList.add('box-uppi');
         productDiv.innerHTML = `
 
             <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
@@ -39,6 +39,7 @@ function displayProducts(products, headingText, buttonBool) {
             <p>${product.price} kr.-</p>
             <a href="/?product=${product.id}">View Product</a>
         `;
+        // @ts-ignore
         container.appendChild(productDiv);
     });
     if (headingText) {
@@ -58,7 +59,7 @@ function displayCategories(categories) {
     heading.innerText = "Skoðaðu vöruflokkana okkar";
     categories.forEach(category => {
         const categoryDiv = document.createElement('div');
-        categoryDiv.classList.add('box');
+        categoryDiv.classList.add('box-niðri');
         categoryDiv.innerHTML = `
             <a href="/?category=${category.id}">${category.title}</a>
         `;
