@@ -17,7 +17,6 @@ function renderFrontpage() {
             displayCategories(data.items);
         })
         .catch(error => console.error('Error:', error));
-    
     }
 
 function displayProducts(products, headingText, buttonBool) {
@@ -38,7 +37,7 @@ function displayProducts(products, headingText, buttonBool) {
             <h3>${product.title}</h3>
             <p>${product.category_title}</p>
             <p>${product.price} kr.-</p>
-            <a href="/?products=${product.id}">View Product</a>
+            <a href="/?product=${product.id}">View Product</a>
         `;
         container.appendChild(productDiv);
     });
