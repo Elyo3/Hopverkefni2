@@ -1,11 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-family: var(--font-family-heading);
+  font-family: var(--font-family-heading);
 }
 
 :root {
@@ -20,30 +20,30 @@ h1 {
 }
 
 .header {
-    padding: 2%;
-    background-color: var(--color-pink);
-    color: var(--color-font-white);
+  padding: 2%;
+  background-color: var(--color-grey);
+  color: var(--color-font-white);
 }
 .header header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /* Valmynd */
 .nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
 }
 
 .nav a {
-    text-decoration: none;
-    color: var(--color-font-white);
-    font-family: var(--font-family-base);
+  text-decoration: none;
+  color: var(--color-font-white);
+  font-family: var(--font-family-base);
 }
 /* Valmynd */
 .wrapper {
-    padding: 2%;
+  padding: 2%;
 }
 
 
@@ -51,50 +51,64 @@ h1 {
 /** Helvítis Box**/
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    border: 2px solid red;
-    align-items: stretch;
-  }
-  
-  .box-uppi {
-    border: 2px solid green;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .box-niðri {
-    border: 2px solid rgba(0, 0, 0, 0.589);
-    text-align: center;
-    padding: 2rem;
-    display: grid;
-    gap: 1rem; 
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border: 2px solid red;
 
-  a {
-    text-decoration: none; 
-  }
+}
 
-  h3 {
-    color: #333; /* Set the heading color */
-    margin: 0; /* Remove default margin */
-  }
-  a:hover {
-    color: #ff9900; /* Set the new color on hover */
-  }
+.box-uppi {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+}
 
- 
+.box-uppi img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  min-width: 500px;
+max-height: ;
+min-height: ;
+  object-fit: cover;
+}
 
-  
-  .takki {
-    padding: 5px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center; 
-    color: white;
-    background-color: #333;
-  }
 
-  
-  
+
+
+.box-niðri{  border: 2px solid rgba(0, 0, 0, 0.589);
+  text-align: center;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem; 
+}
+
+a {
+  text-decoration: none; 
+}
+
+h3 {
+  color: #333; /* Set the heading color */
+  margin: 0; /* Remove default margin */
+}
+a:hover {
+  color: #ff9900; /* Set the new color on hover */
+}
+
+.box-niðri .categories-container{
+  gap:5px;
+}
+
+
+
+
+.takki {
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center; 
+  color: white;
+  background-color: #333;
+}
+
