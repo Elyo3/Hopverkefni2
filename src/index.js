@@ -60,7 +60,7 @@ function displayCategories(categories) {
     heading.innerText = "Skoðaðu vöruflokkana okkar";
     categories.forEach(category => {
         const categoryDiv = document.createElement('div');
-        categoryDiv.classList.add('box');
+        categoryDiv.classList.add('box-niðri');
         categoryDiv.innerHTML = `
             <a href="/?category=${category.id}">${category.title}</a>
         `;
