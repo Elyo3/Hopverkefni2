@@ -24,19 +24,20 @@ h1 {
     background-color: var(--color-pink);
     color: var(--color-font-white);
 }
-.header header{
+.header .header-left a { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-decoration: none;
 }
 
-.nav {
+.header-right .nav-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
 }
 
-.nav a {
+.header-right .nav-links a {
     text-decoration: none;
     color: var(--color-font-white);
     font-family: var(--font-family-base);
@@ -46,17 +47,37 @@ h1 {
     padding: 2%;
 }
 
+#product-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
+#category-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border:2px solid red;
-  }
-  .box {
+}
+
+.box {
     border:2px solid green;
-  }
-  
+}
+
+.box img {
+    min-width: calc(100% - 10px);
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
 
 
