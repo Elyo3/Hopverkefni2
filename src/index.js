@@ -30,14 +30,14 @@ function displayProducts(products, headingText, buttonBool) {
     button.onClick = "location.href='/?categories'";
     products.forEach(product => {
         const productDiv = document.createElement('div');
-        productDiv.classList.add('box-uppi');
+        productDiv.classList.add('box-product');
         productDiv.innerHTML = `
 
             <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
             <h3>${product.title}</h3>
             <p>${product.category_title}</p>
             <p>${product.price} kr.-</p>
-            <a href="/?product=${product.id}">View Product</a>
+            <a href="/?product=${product.id}">Skoða vöru</a>
         `;
         // @ts-ignore
         container.appendChild(productDiv);
@@ -59,7 +59,7 @@ function displayCategories(categories) {
     heading.innerText = "Skoðaðu vöruflokkana okkar";
     categories.forEach(category => {
         const categoryDiv = document.createElement('div');
-        categoryDiv.classList.add('box-niðri');
+        categoryDiv.classList.add('box-cat');
         categoryDiv.innerHTML = `
             <a href="/?category=${category.id}">${category.title}</a>
         `;
@@ -67,6 +67,7 @@ function displayCategories(categories) {
     });
     content.insertBefore(heading, container);
 }
+
 
 function displayCategoryProducts(headingText, category, limit, from) {
     fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?offset=${from}&category=${category}&limit=99`)
@@ -78,14 +79,14 @@ function displayCategoryProducts(headingText, category, limit, from) {
         let counter = 0;
         products.forEach(product => { if (counter < limit) {
             const productDiv = document.createElement('div');
-            productDiv.classList.add('box');
+            productDiv.classList.add('box-product');
             productDiv.innerHTML = `
                 
                 <img src="${product.image}" alt="${product.title}" style="max-width: 100px">
                 <h3>${product.title}</h3>
                 <p>${product.category_title}</p>
                 <p>${product.price} kr.-</p>
-                <a href="/?product=${product.id}">View Product</a>
+                <a href="/?product=${product.id}">Skoða vöru</a>
             `;
             container.append(productDiv);
             counter++;
@@ -131,9 +132,9 @@ function pageButtons(category, items, from) {
     const buttonDiv = document.getElementById('buttonDiv');
     const backLink = document.createElement('a');
     const forwardLink = document.createElement('a');
-    backLink.innerText = "Til baka";
+    backLink.innerText = "Fyrri síða";
     forwardLink.href = `/?category=${category}&from=${from + 6}`
-    forwardLink.innerText = "Áfram";
+    forwardLink.innerText = "Næsta síða";
     if (from == null) {
         buttonDiv.appendChild(forwardLink);
     }
