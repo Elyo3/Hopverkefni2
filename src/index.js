@@ -37,8 +37,9 @@ function displayProducts(products, headingText, buttonBool) {
             <h3>${product.title}</h3>
             <p>${product.category_title}</p>
             <p>${product.price} kr.-</p>
-            <a href="/?product=${product.id}">View Product</a>
+            <a href="/?product=${product.id}">Skoða vöru</a>
         `;
+        // @ts-ignore
         container.appendChild(productDiv);
     });
     if (headingText) {
@@ -67,6 +68,7 @@ function displayCategories(categories) {
     content.insertBefore(heading, container);
 }
 
+
 function displayCategoryProducts(headingText, category, limit, from) {
     fetch(`https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products?offset=${from}&category=${category}&limit=99`)
     .then(response => response.json())
@@ -84,7 +86,7 @@ function displayCategoryProducts(headingText, category, limit, from) {
                 <h3>${product.title}</h3>
                 <p>${product.category_title}</p>
                 <p>${product.price} kr.-</p>
-                <a href="/?product=${product.id}">View Product</a>
+                <a href="/?product=${product.id}">Skoða vöru</a>
             `;
             container.append(productDiv);
             counter++;
@@ -130,9 +132,9 @@ function pageButtons(category, items, from) {
     const buttonDiv = document.getElementById('buttonDiv');
     const backLink = document.createElement('a');
     const forwardLink = document.createElement('a');
-    backLink.innerText = "Til baka";
+    backLink.innerText = "Fyrri síða";
     forwardLink.href = `/?category=${category}&from=${from + 6}`
-    forwardLink.innerText = "Áfram";
+    forwardLink.innerText = "Næsta síða";
     if (from == null) {
         buttonDiv.appendChild(forwardLink);
     }
