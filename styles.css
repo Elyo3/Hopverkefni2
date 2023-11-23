@@ -1,17 +1,3 @@
-:root {
-  /* Litir */
-  --color-grey: #333;
-  --color-font-grey: #2e2e2e;
-  --color-font-white: #ffffff;
-  
-  /* font */
-  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Lora', Georgia, serif;
-  }
-
-
-
-
 *{
   margin: 0;
   padding: 0;
@@ -22,10 +8,16 @@ h1, h2 {
     font-family: var(--font-family-heading);
 }
 
-
-
-/*navigation-header*/
-
+:root {
+  /* Litir */
+  --color-grey: #333;
+  --color-font-grey: #2e2e2e;
+  --color-font-white: #ffffff;
+  
+  /* font */
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
+  }
 
 .header {
   display: flex;
@@ -83,34 +75,31 @@ h1, h2 {
 
 
 /** Helvítis Box**/
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  padding:2rem;
+  gap:1rem;
+  
 }
 
-/*Box-uppi*/
+/*box-product*/
 
-
-.box-uppi img {
- 
+.box-product img {
   min-width: 100%;
   max-height: 400px;
   min-height: 400px;
   object-fit: cover;
   object-position: center;
 }
-
-.box-uppi h3{
+.box-product h3{
   font-family: var(--font-family-base);
 }
-
-.box-uppi p{
+.box-product p{
   font-family: var(--font-family-base);
 }
-
-.box-uppi a{
+.box-product a{
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -121,48 +110,85 @@ h1, h2 {
   color:var(--color-font-white);
   background-color: var(--color-grey);
 }
-  
-.box-uppi a:hover{
+.box-product a:hover{
   background-color: #555555;
   color: white;
 }
 
 
-.box-niðri {
-  border: 2px solid rgba(0, 0, 0, 0.589);
+/** box-cat**/
+.box-cat {
+  border:1px solid var(--color-grey);
   text-align: center;
   padding: 2rem;
   display: grid;
-  row-gap: 1rem;
-  border-radius: 5px;
+  border-radius: 2px;
+}
+.box-cat a {
+ text-decoration: none;
+ font-size: 30px;
+ font-family:var(--font-family-base);
+ color: var(--color-font-grey);
+}
+.box-cat a:hover {
+  color: black; 
+}
+.box-cat h2{
+  font-size: 16px;
+  color: var(--color-font-grey);
+  font-family: var(--font-family-heading)
 }
 
-a {
- 
-}
-
-h3 {
-  color: #333; /* Set the heading color */
-  margin: 0; /* Remove default margin */
-  font-family: var(--font-family-base);
-}
-a:hover {
-  color: #ff9900; 
-}
-
-.box-niðri .categories-container{
-  gap:5px;
+/** Box-product**/
+.productBlock {
+  border: 2px solid red; 
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 
+.productBlock img {
+  max-height: 400px;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productDesc {
+  margin-top: 10px;
+  border: 2px solid blue;
+  display: flex;
+}
+
+.productDesc h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.productTags {
+  margin-top: 5px;
+  color: red;
+  font-size:16px;
+}
 
 
-.takki {
-  padding: 5px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center; 
+
+/** Takki **/
+.buttonDiv {
+  padding: 2rem 0rem;
+}
+
+.buttonDiv a {
   color: white;
-  background-color: #333;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: var(--font-family-base);
+  background-color: var(--color-grey);
 }
 
