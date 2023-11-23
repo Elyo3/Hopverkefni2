@@ -10,7 +10,7 @@ h1 {
 
 :root {
 /* Litir */
---color-pink: pink;
+--color-grey: #333;
 --color-font-grey: #2e2e2e;
 --color-font-white: #ffffff;
 
@@ -29,7 +29,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+/* Valmynd */
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -41,32 +41,60 @@ h1 {
     color: var(--color-font-white);
     font-family: var(--font-family-base);
 }
-
+/* Valmynd */
 .wrapper {
     padding: 2%;
 }
 
+
+
+/** Helvítis Box**/
+
 .container {
     display: grid;
-   grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    border:2px solid red;
+    border: 2px solid red;
+    align-items: stretch;
   }
-  .box {
-    border:2px solid green;
+  
+  .box-uppi {
+    border: 2px solid green;
     display: flex;
     flex-direction: column;
-   
   }
-
-  .box1 {
-    border:2px solid blue;
+  
+  .box-niðri {
+    border: 2px solid rgba(0, 0, 0, 0.589);
+    text-align: center;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
   }
 
+  a {
+    text-decoration: none; 
+  }
 
+  h3 {
+    color: #333; /* Set the heading color */
+    margin: 0; /* Remove default margin */
+  }
+  a:hover {
+    color: #ff9900; /* Set the new color on hover */
+  }
 
+ 
 
+  
+  .takki {
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center; 
+    color: white;
+    background-color: #333;
+  }
 
-
+  
+  

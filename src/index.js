@@ -20,7 +20,7 @@ function displayProducts(products) {
     const container = document.getElementById('product-container');
     products.forEach(product => {
         const productDiv = document.createElement('div');
-        productDiv.classList.add('box');
+        productDiv.classList.add('box-uppi');
         productDiv.innerHTML = `
 
             <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
@@ -38,7 +38,7 @@ function displayCategories(categories) {
     const container = document.getElementById('categories-container');
     categories.forEach(category => {
         const categoriesDiv = document.createElement('div');
-        categoriesDiv.classList.add('box1');
+        categoriesDiv.classList.add('box-niðri');
         categoriesDiv.innerHTML = `
             <a href="/categories/${category.id}"><h3>${category.title}</h3></a>
         `;
