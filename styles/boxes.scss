@@ -23,35 +23,46 @@
   }
   
   /*box-product*/
-  
-  .box-product img {
-    min-width: 100%;
-    max-height: 400px;
-    min-height: 400px;
-    object-fit: cover;
-    object-position: center;
-  }
-  .box-product h3 {
-    font-family: var(--font-family-base);
-  }
-  .box-product p {
-    font-family: var(--font-family-base);
-  }
-  .box-product a {
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: var(--font-family-base);
-    color: var(--color-font-white);
-    background-color: var(--color-grey);
-  }
-  .box-product a:hover {
-    background-color: #555555;
-    color: white;
-  }
+.box-product img {
+  min-width: 100%;
+  max-height: 400px;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box-product h3 {
+  font-family: var(--font-family-heading);
+  font-size: 20px;
+}
+
+.box-product p {
+  font-family: var(--font-family-base);
+  margin-bottom: 0.5rem;
+}
+
+.box-product p-verd {
+  float: right;
+  font-family: var(--font-family-base);
+  font-size: 24px;
+}
+
+.box-product a {
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: var(--font-family-base);
+  color: var(--color-font-white);
+  background-color: var(--color-grey);
+}
+
+.box-product a:hover {
+  background-color: #555555;
+  color: white;
+}
   
   /** box-cat**/
   .box-cat {

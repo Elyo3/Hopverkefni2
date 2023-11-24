@@ -91,11 +91,19 @@ h2 {
 }
 
 .box-product h3 {
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-heading);
+  font-size: 20px;
 }
 
 .box-product p {
   font-family: var(--font-family-base);
+  margin-bottom: 0.5rem;
+}
+
+.box-product p-verd {
+  float: right;
+  font-family: var(--font-family-base);
+  font-size: 24px;
 }
 
 .box-product a {
