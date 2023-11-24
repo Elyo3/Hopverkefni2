@@ -17,8 +17,8 @@ h3 {
   --color-font-grey: #2e2e2e;
   --color-font-white: #ffffff;
   /* font */
-  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
-  --font-family-heading: "Lora", Georgia, serif;
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
 }
 
 .header {
@@ -251,17 +251,17 @@ h3 {
   .box-product img,
   .productBlock img {
     max-width: 95%;
-    max-height: 350px; 
-    min-height: 350px; 
+    max-height: 350px;
+    min-height: 350px;
   }
 
   .productBlock {
     grid-template-columns: 1fr;
-    margin-bottom: 75px; 
+    margin-bottom: 75px;
   }
 
   .buttonDiv a {
-    padding: 10px 25px; 
+    padding: 10px 25px;
   }
 }
 
@@ -288,7 +288,7 @@ h3 {
   #product-container,
   #category-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .container {
@@ -298,21 +298,18 @@ h3 {
   .box-product img,
   .productBlock img {
     max-width: 95%;
-    max-height: 300px; 
-    min-height: 300px; 
-    
+    max-height: 300px;
+    min-height: 300px;
   }
 
   .productBlock {
     grid-template-columns: 1fr;
-    margin-bottom: 75px; 
+    margin-bottom: 75px;
   }
 
   .buttonDiv a {
-    padding: 10px 25px; 
+    padding: 10px 25px;
   }
 }
 
-
 /*# sourceMappingURL=styles.css.map */
-
