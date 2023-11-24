@@ -47,5 +47,21 @@ h1 {
 }
 
 body {
-    
+    background-color: rgb(225, 210, 180);
+}
+
+@media (max-width: 650px) {
+    .header header {
+        justify-content: ;
+        flex-direction: column;
+    }
+
+    .header header h1 {
+        text-align: center;
+    }
+
+    .nav {
+        gap: 5%;
+        justify-content: center;
+    }
 }
