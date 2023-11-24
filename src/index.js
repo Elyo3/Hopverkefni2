@@ -36,7 +36,7 @@ function displayProducts(products, headingText, buttonBool) {
             <img src="${product.image}" alt="${product.title}" style="max-width: 100px;">
             <h3>${product.title}</h3>
             <p>${product.category_title}</p>
-            <p>${product.price} kr.-</p>
+            <p-verd>${product.price} kr.-</p-verd>
             <a href="/?product=${product.id}">Skoða vöru</a>
         `;
         // @ts-ignore
@@ -85,7 +85,7 @@ function displayCategoryProducts(headingText, category, limit, from) {
                 <img src="${product.image}" alt="${product.title}" style="max-width: 100px">
                 <h3>${product.title}</h3>
                 <p>${product.category_title}</p>
-                <p>${product.price} kr.-</p>
+                <p-verd>${product.price} kr.-</p-verd>
                 <a href="/?product=${product.id}">Skoða vöru</a>
             `;
             container.append(productDiv);
