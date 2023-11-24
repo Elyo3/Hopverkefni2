@@ -19,42 +19,29 @@ h1, h2 {
   --font-family-heading: 'Lora', Georgia, serif;
   }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  max-height: 100%;
-  height: 100px;
-  justify-content: space-between;
-  align-items: stretch;
-  background-color: #2e2e2e; 
-  margin-bottom: 50px;
-}
 
+
+.header {
+    padding: 2%;
+    background-color: var(--color-pink);
+    color: var(--color-font-white);
+}
 .header .header-left a { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem;
     text-decoration: none;
-    color: white;
-}
-.header-right {
-  padding: 1rem;
 }
 
 .header-right .nav-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
-    justify-content:baseline;
-    
 }
 
 .header-right .nav-links a {
     text-decoration: none;
-    color: white;
-    font-family:;
-    margin-bottom: 10px;
+    color: var(--color-font-white);
     font-family: var(--font-family-base);
 }
 
@@ -74,7 +61,8 @@ h1, h2 {
 
 
 
-/** Helvítis Box**/
+
+/** HELVÍTIS BOX**/
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -84,8 +72,7 @@ h1, h2 {
   
 }
 
-/*box-product*/
-
+/* BOX-PRODUCT */
 .box-product img {
   min-width: 100%;
   max-height: 400px;
@@ -95,11 +82,14 @@ h1, h2 {
 }
 .box-product h3{
   font-family: var(--font-family-base);
+  padding-bottom: 2px;
 }
 .box-product p{
   font-family: var(--font-family-base);
+  padding: 2px;
 }
 .box-product a{
+  margin-top: 1rem;
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -116,7 +106,7 @@ h1, h2 {
 }
 
 
-/** box-cat**/
+/** BOX-CATEGORIES**/
 .box-cat {
   border:1px solid var(--color-grey);
   text-align: center;
@@ -139,13 +129,12 @@ h1, h2 {
   font-family: var(--font-family-heading)
 }
 
-/** Box-product**/
+/** VARA **/
 .productBlock {
-  border: 2px solid red; 
-  margin: 10px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding:2rem;
 }
 
 
@@ -157,28 +146,41 @@ h1, h2 {
 }
 
 .productDesc {
-  margin-top: 10px;
-  border: 2px solid blue;
+  flex: 2;
   display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .productDesc h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 28px;
   color: #333;
+  font-family: var(--font-family-heading);
+}
+.productDesc p {
+  flex:1;
+  margin-top: 5px;
+  color: black;
+  font-size:16px;
+  font-family: var(--font-family-base);
+  line-height: 1.5rem;
 }
 
 .productTags {
+  flex:1;
   margin-top: 5px;
-  color: red;
-  font-size:16px;
+  font-size:22px;
+  font-family: var(--font-family-base);
+  padding-bottom: 2rem;
 }
 
 
 
-/** Takki **/
+
+/** SKOÐA FLOKKA-BUTTON **/
 .buttonDiv {
-  padding: 2rem 0rem;
+  padding: 2rem 2rem;
 }
 
 .buttonDiv a {
@@ -189,6 +191,16 @@ h1, h2 {
   display: inline-block;
   font-size: 14px;
   font-family: var(--font-family-base);
-  background-color: var(--color-grey);
+  background-color: #2e2e2e;
+  border-radius: 3px;
+}
+
+.buttonDiv a, .buttonDiv button {
+  /* Your existing styles */
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 0; /* Reset margin */
+  cursor: pointer; /* Ensure a pointer cursor */
 }
 
