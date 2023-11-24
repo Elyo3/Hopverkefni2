@@ -1,11 +1,13 @@
-*{
+@charset "UTF-8";
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: var(--font-family-heading);
+h1,
+h2 {
+  font-family: var(--font-family-heading);
 }
 
 :root {
@@ -13,11 +15,10 @@ h1, h2 {
   --color-grey: #333;
   --color-font-grey: #2e2e2e;
   --color-font-white: #ffffff;
-  
   /* font */
-  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Lora', Georgia, serif;
-  }
+  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Lora", Georgia, serif;
+}
 
 .header {
   display: flex;
@@ -26,37 +27,38 @@ h1, h2 {
   height: 100px;
   justify-content: space-between;
   align-items: stretch;
-  background-color: #2e2e2e; 
+  background-color: #2e2e2e;
   margin-bottom: 50px;
 }
 
-.header .header-left a { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem;
-    text-decoration: none;
-    color: white;
+.header .header-left a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
 }
+
 .header-right {
   padding: 1rem;
 }
 
 .header-right .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-    justify-content:baseline;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: baseline;
 }
 
 .header-right .nav-links a {
-    text-decoration: none;
-    color: white;
-    margin-bottom: 10px;
-    font-family: var(--font-family-base);
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-family: var(--font-family-base);
 }
 
+/** hér eru öll box en get skipt í fleiri files, bara vildi ekki gera það strax**/
 #product-container {
   display: grid;
   grid-template-rows: auto auto;
@@ -71,20 +73,15 @@ h1, h2 {
   gap: 10px;
 }
 
-
-
 /** Helvítis Box**/
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding:2rem;
-  gap:1rem;
-  
+  gap: 1rem;
 }
 
 /*box-product*/
-
 .box-product img {
   min-width: 100%;
   max-height: 400px;
@@ -92,13 +89,16 @@ h1, h2 {
   object-fit: cover;
   object-position: center;
 }
-.box-product h3{
+
+.box-product h3 {
   font-family: var(--font-family-base);
 }
-.box-product p{
+
+.box-product p {
   font-family: var(--font-family-base);
 }
-.box-product a{
+
+.box-product a {
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -106,47 +106,49 @@ h1, h2 {
   display: inline-block;
   font-size: 14px;
   font-family: var(--font-family-base);
-  color:var(--color-font-white);
+  color: var(--color-font-white);
   background-color: var(--color-grey);
 }
-.box-product a:hover{
+
+.box-product a:hover {
   background-color: #555555;
   color: white;
 }
 
-
 /** box-cat**/
 .box-cat {
-  border:1px solid var(--color-grey);
+  border: 1px solid var(--color-grey);
   text-align: center;
-  padding: 2rem;
   display: grid;
   border-radius: 2px;
 }
+
 .box-cat a {
- text-decoration: none;
- font-size: 30px;
- font-family:var(--font-family-base);
- color: var(--color-font-grey);
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 30px;
+  font-family: var(--font-family-base);
+  color: var(--color-font-grey);
 }
+
 .box-cat a:hover {
-  color: black; 
+  color: black;
 }
-.box-cat h2{
+
+.box-cat h2 {
   font-size: 16px;
   color: var(--color-font-grey);
-  font-family: var(--font-family-heading)
+  font-family: var(--font-family-heading);
 }
 
 /** Box-product**/
 .productBlock {
-  border: 2px solid red; 
+  border: 2px solid red;
   margin: 10px;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 
 .productBlock img {
   max-height: 400px;
@@ -170,10 +172,12 @@ h1, h2 {
 .productTags {
   margin-top: 5px;
   color: red;
-  font-size:16px;
+  font-size: 16px;
 }
 
-
+.content {
+  padding: 2rem;
+}
 
 /** Takki **/
 .buttonDiv {
@@ -191,3 +195,4 @@ h1, h2 {
   background-color: var(--color-grey);
 }
 
+/*# sourceMappingURL=styles.css.map */
