@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +15,10 @@ h2 {
   --color-grey: #333;
   --color-font-grey: #2e2e2e;
   --color-font-white: #ffffff;
-
-
   /* font */
-  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Lora', Georgia, serif;
+  --font-family-base: "Noto Sans Display", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Lora", Georgia, serif;
 }
-
 
 .header {
   display: flex;
@@ -40,8 +38,8 @@ h2 {
   padding: 2rem;
   text-decoration: none;
   color: white;
-
 }
+
 .header-right {
   padding: 1rem;
 }
@@ -60,6 +58,7 @@ h2 {
   font-family: var(--font-family-base);
 }
 
+/** hér eru öll box en get skipt í fleiri files, bara vildi ekki gera það strax**/
 #product-container {
   display: grid;
   grid-template-rows: auto auto;
@@ -79,12 +78,10 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 2rem;
   gap: 1rem;
 }
 
 /*box-product*/
-
 .box-product img {
   min-width: 100%;
   max-height: 400px;
@@ -92,12 +89,15 @@ h2 {
   object-fit: cover;
   object-position: center;
 }
+
 .box-product h3 {
   font-family: var(--font-family-base);
 }
+
 .box-product p {
   font-family: var(--font-family-base);
 }
+
 .box-product a {
   color: white;
   padding: 10px 25px;
@@ -109,6 +109,7 @@ h2 {
   color: var(--color-font-white);
   background-color: var(--color-grey);
 }
+
 .box-product a:hover {
   background-color: #555555;
   color: white;
@@ -118,19 +119,22 @@ h2 {
 .box-cat {
   border: 1px solid var(--color-grey);
   text-align: center;
-  padding: 2rem;
   display: grid;
   border-radius: 2px;
 }
+
 .box-cat a {
   text-decoration: none;
+  padding: 2rem;
   font-size: 30px;
   font-family: var(--font-family-base);
   color: var(--color-font-grey);
 }
+
 .box-cat a:hover {
   color: black;
 }
+
 .box-cat h2 {
   font-size: 16px;
   color: var(--color-font-grey);
@@ -171,6 +175,16 @@ h2 {
   font-size: 16px;
 }
 
+.content {
+  padding: 2rem;
+}
+
+.content h2 {
+  font-size: 30px;
+  color: var(--color-font-grey);
+  padding-bottom: 1.5rem;
+}
+
 /** Takki **/
 .buttonDiv {
   padding: 2rem 0rem;
@@ -186,3 +200,5 @@ h2 {
   font-family: var(--font-family-base);
   background-color: var(--color-grey);
 }
+
+/*# sourceMappingURL=styles.css.map */

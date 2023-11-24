@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2 {
+    font-family: var(--font-family-heading);
+  }
+  
+  :root {
+    /* Litir */
+    --color-grey: #333;
+    --color-font-grey: #2e2e2e;
+    --color-font-white: #ffffff;
+  
+  
+    /* font */
+    --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Lora', Georgia, serif;
+  }
+  
