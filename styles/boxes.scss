@@ -1,0 +1,122 @@
+/** hér eru öll box en get skipt í fleiri files, bara vildi ekki gera það strax**/
+
+#product-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  #category-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+  
+  /** Helvítis Box**/
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /*box-product*/
+  
+  .box-product img {
+    min-width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .box-product h3 {
+    font-family: var(--font-family-base);
+  }
+  .box-product p {
+    font-family: var(--font-family-base);
+  }
+  .box-product a {
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: var(--font-family-base);
+    color: var(--color-font-white);
+    background-color: var(--color-grey);
+  }
+  .box-product a:hover {
+    background-color: #555555;
+    color: white;
+  }
+  
+  /** box-cat**/
+  .box-cat {
+    border: 1px solid var(--color-grey);
+    text-align: center;
+    display: grid;
+    border-radius: 2px;
+  }
+  .box-cat a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 30px;
+    font-family: var(--font-family-base);
+    color: var(--color-font-grey);
+  }
+  .box-cat a:hover {
+    color: black;
+  }
+  .box-cat h2 {
+    font-size: 16px;
+    color: var(--color-font-grey);
+    font-family: var(--font-family-heading);
+  }
+  
+  /** Box-product**/
+  .productBlock {
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .productBlock img {
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .productDesc {
+    margin-top: 10px;
+    border: 2px solid blue;
+    display: flex;
+  }
+  
+  .productDesc h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .productTags {
+    margin-top: 5px;
+    color: red;
+    font-size: 16px;
+  }
+  
+
+ .content {
+  padding: 2rem;
+ }
+
+ .content h2 {
+  font-size: 30px;
+  color: var(--color-font-grey);
+  padding-bottom: 1.5rem;
+}
