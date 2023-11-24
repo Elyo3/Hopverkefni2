@@ -53,7 +53,6 @@ h1, h2 {
 .header-right .nav-links a {
     text-decoration: none;
     color: white;
-    font-family:;
     margin-bottom: 10px;
     font-family: var(--font-family-base);
 }
