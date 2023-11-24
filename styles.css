@@ -179,6 +179,12 @@ h2 {
   padding: 2rem;
 }
 
+.content h2 {
+  font-size: 30px;
+  color: var(--color-font-grey);
+  padding-bottom: 1.5rem;
+}
+
 /** Takki **/
 .buttonDiv {
   padding: 2rem 0rem;
