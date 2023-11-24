@@ -21,16 +21,11 @@ h2 {
   --font-family-heading: 'Lora', Georgia, serif;
 }
 
-
 .header {
   display: flex;
   flex-direction: row;
-  max-height: 100%;
-  height: 100px;
   justify-content: space-between;
-  align-items: stretch;
   background-color: #2e2e2e;
-  margin-bottom: 50px;
 }
 
 .header .header-left a {
@@ -40,7 +35,6 @@ h2 {
   padding: 2rem;
   text-decoration: none;
   color: white;
-
 }
 .header-right {
   padding: 1rem;
@@ -50,14 +44,19 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
-  justify-content: baseline;
+  justify-content: center;
 }
 
 .header-right .nav-links a {
   text-decoration: none;
-  color: white;
+  color: var(--color-font-white);
   margin-bottom: 10px;
   font-family: var(--font-family-base);
+}
+
+.header-right .nav-links a:hover {
+    color: rgba(255, 255, 255, 0.699);
+    transition: 0.2s;
 }
 
 #product-container {
@@ -188,16 +187,19 @@ h2 {
 }
 
 body {
-    background-color: rgb(225, 210, 180);
+    
 }
 
 @media (max-width: 650px) {
-    .header header {
-        justify-content: ;
+    .header {
         flex-direction: column;
+        justify-content: center;
     }
-
-    .header header h1 {
+    .header .header-left a {
+        padding: 1rem;
+        justify-content: center;
+    }
+    .header h1 {
         text-align: center;
     }
 
